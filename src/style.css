@@ -126,12 +126,11 @@ small {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: #ff5722;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+  font-size: 20px;
 }
 
 .weather-forecast-temperature-min {
@@ -139,5 +138,5 @@ small {
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 15px;
 }
