@@ -1,0 +1,133 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  color: #ff5722;
+  font-size: 35px;
+  font-weight: bolder;
+  line-height: 25px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #154da1;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background: #eeeeee;
+}
+
+.overview {
+  margin-bottom: 15px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: #ff5722;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+  color: #154da1;
+}
+
+.weather-temperature .active {
+  color: #154da1;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+.search-input {
+  background: #ffc0ad;
+  padding: 10px 10px;
+}
+.search-button {
+  background: #ff5722;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  color: #eeeeee;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+  padding: 8px 5px;
+  position: relative;
+  left: -20px;
+}
+.search-button:hover {
+  color: #ff5722;
+  background: white;
+  border: 1px solid #ff5722;
+}
+.current-location {
+  font-size: 15px;
+  margin: 0;
+  padding: auto;
+  position: relative;
+  left: -20px;
+  top: 10px;
+}
+.location-link {
+  color: #ff5722;
+  font-weight: bolder;
+}
+#humidity,
+#wind {
+  color: #ff5722;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
