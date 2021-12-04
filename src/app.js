@@ -92,29 +92,6 @@ function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
-function displayFtemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  //remove active class the clink and add active class in the flink
-  clink.classList.remove("active");
-  flink.classList.add("active");
-  let ftemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(ftemperature);
-}
-function displayCtemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  clink.classList.add("active");
-  flink.classList.remove("active");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-let celsiusTemperature = null;
-
-let flink = document.querySelector("#flink");
-flink.addEventListener("click", displayFtemperature);
-
-let clink = document.querySelector("#clink");
-clink.addEventListener("click", displayCtemperature);
 
 function handleSubmit(event) {
   event.preventDefault();
